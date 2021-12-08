@@ -9,7 +9,7 @@ This is code for building a GPT-3 powered knowledge base application using Next.
 
 ## Using this code
 
-1. Watch the [2-minute tutorial video](https://youtu.be/o3IiN2eISA0).
+1. Watch the [tutorial video](https://youtu.be/o3IiN2eISA0).
 2. Create and/or copy and API key from the [OpenAI API Keys Page](https://beta.openai.com/account/api-keys).
 2. Click the 'Deploy with Vercel' button below to begin deploying this app to your vercel.com account.
 

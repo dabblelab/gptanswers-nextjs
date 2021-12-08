@@ -1,34 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Building a GPT-3 Knowledge Base App (Next.js)
 
-## Getting Started
+[![YouTube Video](https://img.youtube.com/vi/o3IiN2eISA0/maxresdefault.jpg)](https://www.youtube.com/watch?v=o3IiN2eISA0)
 
-First, run the development server:
+This is code for building a GPT-3 powered knowledge base application using Next.js. It's adapted from the example in the book [Exploring GPT-3](https://www.amazon.com/dp/1800563191). To deploy and run this code you'll need the following:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- An OpenAI API key
+- An account on vercel.com (a free account will work fine)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Using this code
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Watch the [2-minute tutorial video](https://youtu.be/o3IiN2eISA0).
+2. Create and/or copy and API key from the [OpenAI API Keys Page](https://beta.openai.com/account/api-keys).
+2. Click the 'Deploy with Vercel' button below to begin deploying this app to your vercel.com account.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdabblelab%2Fgptanswers-nextjs%2F&env=OPENAI_API_KEY&envDescription=Your%20OpenAI%20API%20Key&project-name=dabblelab-gptanswers-nextjs&repo-name=dabblelab-gptanswers-nextjs)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3. Enter your OpenAI API key for the environment variable named `OPENAI_API_KEY`. 
+4. Add your own content to the documents defined in the `routes/answers.json` file.
+5. Test the app by visiting the Vercel generated app URL.
 
-## Learn More
+## Using an answers file
 
-To learn more about Next.js, take a look at the following resources:
+By default the code uses a JavaScript array of documents in `routes/answers.json` for the knowledge base. Alternately, you can store documents in an answers file. There is an example answers file named `answers.jsonl` in the root, along with a file named `upload.js` that provides code you can use to upload an answers file to the OpenAI API. If you use the answers file, you'll also need to setup a secret / environment variable named `ANSWERS_FILE` with the OpenAI filename for the value.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+An array of documents is used by default because because it's simpler. However, there are two primary advantages to using a documents file. First, you can include more than 200 documents. Second, the the API will throw a 404 error if there isn't a matching result. Meaning, the app could be setup to log questions that should be added to the documents - unanswered questions. This is not currently a feature but is planned for a future release.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For more details on using answer files, see the [OpenAI Documentation](https://beta.openai.com/docs/api-reference/answers).
 
-## Deploy on Vercel
+## Question and comments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have questions or comments, please post them on the [OpenAI Community Topic](https://community.openai.com/t/getting-started-with-the-openai-api-and-node-js-javascript/223) for this project, or on the [GitHub Discussions](https://github.com/dabblelab/gptanswers-node/discussions) page for this code. Thanks so much!

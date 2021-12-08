@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Button1 from "../components/Form-Components/Button-1";
-import Form from "../components/Form-Components/Form";
-import Input from "../components/Form-Components/Input";
+import Button1 from "../components/FormComponents/Button";
+import Form from "../components/FormComponents/Form";
+import Input from "../components/FormComponents/Input";
 import axios from "axios";
 
 // Function to fetch data from API

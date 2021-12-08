@@ -4,13 +4,13 @@
 
 This is code for building a GPT-3 powered knowledge base application using Next.js. It's adapted from the example in the book [Exploring GPT-3](https://www.amazon.com/dp/1800563191). To deploy and run this code you'll need the following:
 
-- An OpenAI API key
-- An account on vercel.com (a free account will work fine)
+- Access to the OpenAI API - [Sign up for an account](https://beta.openai.com/signup)
+- An account on [vercel.com](https://vercel.com) (a free account will work fine)
 
-## Using this code
+## Getting Started
 
 1. Watch the [tutorial video](https://youtu.be/o3IiN2eISA0).
-2. Create and/or copy and API key from the [OpenAI API Keys Page](https://beta.openai.com/account/api-keys).
+2. Create and/or copy an API key from the [OpenAI API Keys Page](https://beta.openai.com/account/api-keys).
 2. Click the 'Deploy with Vercel' button below to begin deploying this app to your vercel.com account.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdabblelab%2Fgptanswers-nextjs%2F&env=OPENAI_API_KEY&envDescription=Your%20OpenAI%20API%20Key&project-name=dabblelab-gptanswers-nextjs&repo-name=dabblelab-gptanswers-nextjs)
@@ -29,4 +29,4 @@ For more details on using answer files, see the [OpenAI Documentation](https://b
 
 ## Question and comments
 
-If you have questions or comments, please post them on the [OpenAI Community Topic](https://community.openai.com/t/getting-started-with-the-openai-api-and-node-js-javascript/223) for this project, or on the [GitHub Discussions](https://github.com/dabblelab/gptanswers-node/discussions) page for this code. Thanks so much!
+If you have questions or comments, please post them on the [Exploring GPT-3 Discord Server](https://discord.gg/Xptpz7JyWy) or in the [GitHub Issues](https://github.com/dabblelab/gptanswers-nextjs/issues) page for this repository. Thanks so much!
